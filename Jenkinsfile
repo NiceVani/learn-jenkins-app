@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                     echo "with docker"
                     npm --version
-                    touch "with-container.txt"
+                    touch with-container.txt
                 '''
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh '''
                     echo "without docker"
-                    touch "without-container.txt"
+                    touch without-container.txt
                 '''
             }
         }
