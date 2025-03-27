@@ -1,9 +1,9 @@
 pipeline{
-    agnet any
+    agent any
     
     stages{
         stage('Build'){
-            agnet{
+            agent{
                 docker{
                     image 'node:18-alpine'
                     reuseNode true
